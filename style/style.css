@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@500&family=Lato:wght@700&family=Merriweather:ital,wght@1,700&family=Prompt:wght@700&family=Raleway:wght@900&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
 }
 body{
     background: #f3d39e;
@@ -9,44 +11,44 @@ body{
 header{
     min-height: 20vh;
 }
-section{
+.wrapper{
     min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items:center;
 }
-section:nth-child(1){
+.wrapper:nth-child(1){
     color: #fff;
 }
-section:nth-child(2){
+.wrapper:nth-child(2){
     color:#1D212B;
 }
-section:nth-child(3){
+.wrapper:nth-child(3){
     color:#fff;
 }
-section:nth-child(4){
+.wrapper:nth-child(4){
     color: #1D212B;
 }
-section .container{
+.wrapper .container{
     margin: 100px;
 }
-section h1{
+.wrapper h1{
     font-size: 60px;
 }
-section h2{
+.wrapper h2{
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
 }
-section .cards{
+.wrapper .cards{
     display: flex;
 }
-section .cards .text-card{
+.wrapper .cards .text-card{
     background: #2696E9;
     margin: 20px;
     padding: 20px;
 }
-section .cards .text-card h3{
+.wrapper .cards .text-card h3{
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
@@ -54,10 +56,10 @@ section .cards .text-card h3{
 }
 
 @media (max-width: 900px){
-    section h1{
+    .wrapper h1{
         font-size: 40px;
     }
-    section .cards{
+    .wrapper .cards{
         flex-direction: column;
     }
 }
@@ -82,4 +84,51 @@ header div{
 }
 .fa-brands{
     margin-right: 100px;
+}
+.fa-brands:hover{
+    color: rgb(7, 219, 190);
+}
+a{
+    text-decoration: none;
+    color: #1F60A6;
+}
+a:visited{
+    text-decoration: none;
+}
+.introduction{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+main img{
+    width: 400px;
+}
+.self-intro{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.self-intro p{
+    color: #1F60A6;
+    margin-top: 50px;
+    animation: moveintro 1s forwards;
+}
+.myphoto, .self-intro{
+    animation: showphoto 2.5s forwards;
+}
+@keyframes showphoto{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes moveintro{
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
