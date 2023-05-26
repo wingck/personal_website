@@ -7,81 +7,283 @@
 <body>
     <header>
         <div>
-            <img src="mylogo.png" alt="">
+            <img src="images/mylogo2.svg" alt="">
             <div class="header-icons">
                 <a href="https://www.linkedin.com/in/ka-wing-chan-3a0a4319a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/wingck" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://codepen.io/ckwwingo" target="_blank"><i class="fa-brands fa-codepen"></i></a>
             </div>
         </div>
+        <div id="main-menu">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-bars"></i>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#employment">Employment</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+       </div>
     </header>
-        <main>
-          <div class="introduction">
-            <img src="myphoto.png" alt="" class="myphoto">
+    <main>
+          <div class="introduction" id="about">
+            <img src="images/myphoto.png" alt="" class="myphoto">
             <div class="self-intro">
-                <p>Chan Ka Wing (Wingo)</p>
-                <p>Web designer/developer</p>
-                <p>Frontend/Backend/Full-stack</p>
+                <p class="hi">Hi! </p>
+                <p class="myintro">I am Wingo. Before I came to Humber College, I was a Junior Web Developer in Hong Kong. 
+                My works included designing and updating websites under Hong Kong Trade Development Council (HKTDC) such as <a href="https://portal.hktdc.com/aff/2022/en/" class="aff" target="_blank">Asian Financial Forum</a>, 
+                <a href="https://www.asiasummitglobalhealth.com/conference/asgh/en" class="asgh" target="_blank">Asia Summit on Global Health</a> and <a href="https://entertainmentpulse.hktdc.com/" class="ep" target="_blank">EntertainmentPulse</a>.</p>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper employment-wrapper">
             <div class="container reveal">
-                <h2>Your title</h2>
+                <h1 id="employment">Employment</h1>
                 <div class="cards">
-                    <div class="text-card">
-                        <h3>Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, debitis! Neque eum eos eaque sit ipsam? Eos architecto labore nemo odio quasi excepturi eligendi facilis quia? Eum blanditiis accusantium voluptatibus?</p>
+                    <div class="text-card employment-card">
+                        <h2>Mirum (2021-2022)</h2>
+                        <p>Position: Junior Web Developer</p>
+                        <p class="myworks-topic">My Works:</p>
                     </div>
-                    <div class="text-card">
-                        <h3>Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, debitis! Neque eum eos eaque sit ipsam? Eos architecto labore nemo odio quasi excepturi eligendi facilis quia? Eum blanditiis accusantium voluptatibus?</p>
+                    <div class="myworks">
+                        <a href="https://portal.hktdc.com/aff/2022/en/" target="_blank" class="hover-effect">
+                            <img src="images/aff.png" alt="" class="cards-img">
+                            <span class="hover-text">
+                                <ul>
+                                    <li>Homepage design</li>
+                                    <li>Update different pages</li>
+                                    <li>Banners design</li>
+                                </ul>
+                            </span>
+                            <p>Asian Financial Forum</p>
+                        </a>
+                        <a href="https://www.asiasummitglobalhealth.com/conference/asgh/en" target="_blank" class="hover-effect">
+                            <img src="images/asgh.png" alt="" class="cards-img">
+                            <span class="hover-text">
+                                <ul>
+                                    <li>Update different pages</li>
+                                    <li>Migration from Opentext to Wordpress</li>
+                                    <li>Logo design</li>
+                                </ul>
+                            </span>
+                            <p>Asia Summit on Global Health</p>
+                        </a>
+                        <a href="https://entertainmentpulse.hktdc.com/" target="_blank" class="hover-effect">
+                            <img src="images/ep.png" alt="" class="cards-img">
+                            <span class="hover-text">
+                                <ul>
+                                    <li>Update different pages</li>
+                                    <li>Banners design</li>
+                                </ul>
+                            </span>
+                            <p>EntertainmentPulse</p>
+                        </a>
                     </div>
-                    <div class="text-card">
-                        <h3>Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, debitis! Neque eum eos eaque sit ipsam? Eos architecto labore nemo odio quasi excepturi eligendi facilis quia? Eum blanditiis accusantium voluptatibus?</p>
+                </div>
+            </div>
+         </div>  
+         <div class="wrapper">
+            <div class="container reveal">
+                <h1 id="projects">Projects</h1>
+                <div class="project-block">
+                    <a href="https://github.com/wingck/css_animation_project" target="_blank"><img src="images/css-project.png" alt=""></a>
+                    <div class="cards">
+                        <div class="text-card">
+                            <p class="project-title">CSS Animation Project</p>
+                            <p class="project-text">A CSS animation about a submarine diving into the sea. After the start button is clicked, the submarine starts diving. When it is diving, some fish and sharks are swimming beside it. When it dives deeper, the sea color becomes darker and it starts giving off light. Finally, there is jellyfish twinking.</p>
+                            <p class="project-language">Languages: HTML, CSS, Javascript</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="wrapper">
             <div class="container reveal">
-                <h2>Your title</h2>
-                <div class="cards">
-                    <div class="text-card">
-                        <h3>Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, debitis! Neque eum eos eaque sit ipsam? Eos architecto labore nemo odio quasi excepturi eligendi facilis quia? Eum blanditiis accusantium voluptatibus?</p>
+                <div class="project-block">
+                    <div class="cards">
+                        <div class="text-card">
+                            <p class="project-title">Javascript Pet Project</p>
+                            <p class="project-text">An interface for choosing characters in a game. When the left/right arrows are clicked, the character changes with the value box in the top left corner.</p>
+                            <p class="project-language">Languages: HTML, CSS, Javascript</p>
+                        </div>
                     </div>
-                    <div class="text-card">
-                        <h3>Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, debitis! Neque eum eos eaque sit ipsam? Eos architecto labore nemo odio quasi excepturi eligendi facilis quia? Eum blanditiis accusantium voluptatibus?</p>
-                    </div>
-                    <div class="text-card">
-                        <h3>Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, debitis! Neque eum eos eaque sit ipsam? Eos architecto labore nemo odio quasi excepturi eligendi facilis quia? Eum blanditiis accusantium voluptatibus?</p>
+                    <a href="https://github.com/wingck/javascript_pet_project" target="_blank"><img src="images/javascript-project.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="container reveal">
+                <div class="project-block">
+                   <a href="https://github.com/wingck/ASP.NET-Inventory-Management-System-for-Supermarket" target="_blank"><img src="images/csharp-project.png" alt=""></a>
+                    <div class="cards">
+                        <div class="text-card">
+                            <p class="project-title">C# CRUD MVP Project</p>
+                            <p class="project-text">An inventory management system for supermarket. It contains CRUD functions so that I can create, add, update and delete items.</p>
+                            <p class="project-language">Languages: C#, ASP.NET, HTML, CSS</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>  
-        <div class="wrapper">
+         </div>
+         <div class="wrapper">
             <div class="container reveal">
-                <h2>Your title</h2>
+                <div class="project-block">
+                    <div class="cards">
+                        <div class="text-card">
+                            <p class="project-title">Humbercurrent Redesign</p>
+                            <p class="project-text">Redesign Humbercurrent Homepage, including its navigation, menu and homepage contents.</p>
+                            <p class="project-language">Languages: HTML, CSS, jQuery</p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/wingck/Humber_Current" target="_blank"><img src="images/humbercurrent2.png" alt=""></a>
+                </div>
+            </div>
+         </div>
+         <div class="wrapper">
+            <div class="container reveal">
+                <div class="project-block">
+                    <a href="https://github.com/wingck/PHP-CMS" target="_blank"><img src="images/phpcms.png" alt=""></a>
+                    <div class="cards">
+                        <div class="text-card">
+                            <p class="project-title">PHP CMS for UFO site</p>
+                            <p class="project-text">It is a PHP-CMS management system about UFO sightings. It includes different tables, such as sightings, encounter types, articles, footage and phenomena. Then I show the information in the frontend.</p>
+                            <p class="project-language">Languages: PHP, HTML, CSS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div class="wrapper wrapper-projects">
+            <div class="container reveal">
+                <div class="project-block">
+                    <div class="cards">
+                        <div class="text-card">
+                            <p class="project-title">Pizza Ordering Application</p>
+                            <p class="project-text">A page showing pizza information using API and you can order pizza through it.</p>
+                            <p class="project-language">Languages: Node.js, Express.js, CSS </p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/wingck/Node.js-A-pizza-ordering-application" target="_blank"><img src="images/nodejs-project.png" alt=""></a>
+                </div>
+            </div>
+         </div>
+         <div class="wrapper">
+            <div class="container reveal">
+                <div class="project-block">
+                    <a href="https://github.com/wingck/laravel_personal_website" target="_blank"><img src="images/laravel-cms.png" alt=""></a>
+                    <div class="cards">
+                        <div class="text-card">
+                            <p class="project-title">Laravel CMS for Personal Page</p>
+                            <p class="project-text">A personal page using laravel to create backend database. Then the data is shown using React.js on the frontend.</p>
+                            <p class="project-language">Languages: Laravel, PHP, HTML, CSS, React.js</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div class="wrapper">
+            <div class="container reveal">
+                <h1 id="skills">Skills</h1>
                 <div class="cards">
+                    <div class="text-card skill-card">
+                        <div>
+                            <img src="images/html.svg" alt="" class="html">
+                            <p class="skill-title">HTML</p>
+                        </div>
+                        <div>
+                            <img src="images/css.svg" alt="" class="css">
+                            <p class="skill-title">CSS</p>
+                        </div>
+                        <div>
+                            <img src="images/javascript.svg" alt="" class="javascript">
+                            <p class="skill-title">JavaScript</p>
+                        </div>
+                        <div>
+                            <img src="images/bootstrap.svg" alt="" class="bootstrap">
+                            <p class="skill-title">Bootstrap</p>
+                        </div>
+                        <div>
+                            <img src="images/jquery.svg" alt="" class="jquery">
+                            <p class="skill-title">jQuery</p>
+                        </div>
+                        <div>
+                            <img src="images/sql.svg" alt="" class="sql">
+                            <p class="skill-title">SQL</p>
+                        </div>
+                        <div>
+                            <img src="images/mysql.svg" alt="" class="mysql">
+                            <p class="skill-title">MySQL</p>
+                        </div>
+                        <div>
+                            <img src="images/csharp.svg" alt="" class="csharp">
+                            <p class="skill-title">C#</p>
+                        </div>
+                        <div>
+                            <img src="images/aspnet.svg" alt="" class="aspnet">
+                            <p class="skill-title">ASP.NET</p>
+                        </div>
+                        <div>
+                            <img src="images/php.svg" alt="" class="php">
+                            <p class="skill-title">PHP</p>
+                        </div>
+                        <div>
+                            <img src="images/laravel.svg" alt="" class="laravel">
+                            <p class="skill-title">Laravel</p>
+                        </div>
+                        <div>
+                            <img src="images/mongodb.svg" alt="" class="mongodb">
+                            <p class="skill-title">MongoDB</p>
+                        </div>
+                        <div>
+                            <img src="images/nodejs.svg" alt="" class="nodejs">
+                            <p class="skill-title">Node.js</p>
+                        </div>
+                        <div>
+                            <img src="images/reactjs.svg" alt="" class="reactjs">
+                            <p class="skill-title">React.js</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div class="wrapper">
+            <div class="container reveal">
+                <h1 id="education">Education</h1>
+                <div class="cards education-card">
                     <div class="text-card">
-                        <h3>Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, debitis! Neque eum eos eaque sit ipsam? Eos architecto labore nemo odio quasi excepturi eligendi facilis quia? Eum blanditiis accusantium voluptatibus?</p>
+                        <h2>Humber College (2022-2023)</h2>
+                        <p>Program: Web Development Graduate Certificate</p>
                     </div>
                     <div class="text-card">
-                        <h3>Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, debitis! Neque eum eos eaque sit ipsam? Eos architecto labore nemo odio quasi excepturi eligendi facilis quia? Eum blanditiis accusantium voluptatibus?</p>
+                        <h2>City University of Hong Kong (2016-2020)</h2>
+                        <p>Program: Bachelor of Engineering in Bioengineering</p>
                     </div>
-                    <div class="text-card">
-                        <h3>Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, debitis! Neque eum eos eaque sit ipsam? Eos architecto labore nemo odio quasi excepturi eligendi facilis quia? Eum blanditiis accusantium voluptatibus?</p>
+                </div>
+            </div>
+         </div>
+         <div class="wrapper">
+            <div class="container reveal">
+                <h1 id="contact">Contact</h1>
+                <div class="cards">
+                    <div class="text-card contact-card">
+                        <form action="https://formspree.io/f/xwkjjvng" method="POST" class="contact-form">
+                            <label>Your email:
+                                <input type="email" name="email" class="email">
+                            </label>
+                            <label>Your message:<br>
+                                <textarea name="message"></textarea>
+                            </label>
+                            <button type="submit" class="submit-btn">Send</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </main> 
+    </main>
 <script src="script/script.js"></script>
 <script src="https://kit.fontawesome.com/c54b7d85ab.js" crossorigin="anonymous"></script>
 </body>
