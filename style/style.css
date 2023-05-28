@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@500&family=Lato:wght@700&family=Merriweather:ital,wght@1,700&family=Prompt:wght@700&family=Raleway:wght@900&family=Wix+Madefor+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@500&family=Lato:wght@700&family=Merriweather:ital,wght@1,700&family=Prompt:wght@700&family=Raleway:wght@900&family=Wix+Madefor+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@500&family=Lato:wght@700&family=Lora&family=Merriweather:ital,wght@1,700&family=Prompt:wght@700&family=Raleway:wght@900&family=Wix+Madefor+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@500&family=Lato:wght@700&family=Libre+Baskerville:ital@1&family=Lora&family=Merriweather:ital,wght@1,700&family=Prompt:wght@700&family=Raleway:wght@900&family=Wix+Madefor+Display:wght@500&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Lora', serif;
     font-weight: bold;
 }
 body{
-    background-color: #f3d39e;
+    background-color: #eddabb;
 }
 main{
     overflow-x: hidden;
@@ -17,7 +19,7 @@ ul, li{
     list-style-type: none;
 }
 header{
-    background-color: #f3d39e;
+    background-color: #eddabb;
     position: relative;
     padding-left: 50px;
     width: 100%;
@@ -26,8 +28,26 @@ main{
     position: relative;
     z-index:0;
 }
-.wrapper{
-    margin-top: 250px;
+.employment-wrapper, .skills-wrapper, .education-wrapper{
+    padding-top: 250px;
+    padding-bottom: 250px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.employment-wrapper{
+    margin-bottom: 125px;
+}
+.skills-wrapper{
+    background-color: white;
+}
+.education-wrapper{
+    background-color: rgb(210, 237, 210);
+}
+.contact-wrapper{
+    background-color: rgb(239, 207, 239);
+    padding-top: 250px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -66,12 +86,12 @@ main{
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.reveal{
+.show{
     position: relative;
     opacity: 0;
     transition: all 1.25s ease;
 }
-.reveal.active{
+.show.active{
     opacity: 1;
 }
 header img{
@@ -103,7 +123,6 @@ a:visited{
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    margin-bottom: 60px;
 }
 .self-intro{
     display: flex;
@@ -118,10 +137,11 @@ a:visited{
 }
 .hi{
     font-size: 33px;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Libre Baskerville', serif;
 }
 .myintro{
     font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
 }
 .self-intro{
     animation: showphoto 2.5s forwards;
@@ -134,19 +154,6 @@ a:visited{
 .cards-img{
     height: 200px;
     width: 300px;
-}
-.menu{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 25px;
-    color: white;
-}
-.menu a{
-    margin-left: 40px;
-    margin-top: 80px;
-}
-.menu a:hover{
-    color: rgb(7, 219, 190);
 }
 .hide {
     display: none;
@@ -168,6 +175,9 @@ a:visited{
     font-size: 25px;
     font-family: 'Prompt', sans-serif;
     text-decoration: underline;
+}
+.aff:hover, .asgh:hover, .ep:hover{
+    color: rgb(161, 78, 92);
 }
 .hover-effect {
     position: relative;
@@ -212,8 +222,35 @@ a:visited{
     white-space: nowrap;
     line-height: 40px;
 }
+
+/* projects */
+.projects-wrapper{
+    padding-top: 250px;
+    padding-bottom: 250px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.projects-wrapper:nth-child(odd){
+    background: linear-gradient(90deg, rgba(192,182,237,1) 50%,rgba(232,168,159,1) 50%);  
+}
+.projects-wrapper:nth-child(even){
+    background: linear-gradient(-90deg, rgba(192,182,237,1) 50%,rgba(232,168,159,1) 50%);
+}
+.projects-wrapper:nth-child(odd) a{
+    transform:translateX(-20%);
+}
+.projects-wrapper:nth-child(odd) .cards{
+    transform: translateX(20%);
+}
+.projects-wrapper:nth-child(even) a{
+    transform:translateX(20%);
+}
+.projects-wrapper:nth-child(even) .cards{
+    transform: translateX(-20%);
+}
 .project-text{
-    font-size: 16px;
+    font-size: 22px;
 }
 .project-block{
     margin: 20px;
@@ -224,7 +261,7 @@ a:visited{
 .project-block img{
     border: 4px solid rgb(200, 122, 27);
     border-radius: 20px;
-    width: 500px;
+    width: 540px;
     height: auto;
 }
 .project-title{
@@ -232,14 +269,18 @@ a:visited{
     text-align:center;
     margin-bottom: 10px;
     white-space: nowrap;
+    font-size: 30px;
+    text-decoration: underline;
 }
 .wrapper .project-block .cards .text-card{
     width: 500px;
 }
 .project-language{
-    font-size: 16px;
+    font-size: 22px;
     margin-top: 10px;
 }
+/* end */
+
 .skill-card{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -285,6 +326,7 @@ a:visited{
 }
 .email{
     width: 420px;
+    background-color:rgb(239, 207, 239);
 }
 .submit-btn{
     width: 100px;
@@ -318,6 +360,9 @@ textarea{
     z-index:2;
     transform: translate(-70px, -100px);
  }
+ #main-menu:hover{
+    animation: turn 0.5s forwards;
+ }
  #main-menu ul {
     padding: 5px 0 5px 0;
     margin-left: 30px;
@@ -346,17 +391,30 @@ textarea{
 }
 #main-menu li li:hover {
    background-color: #e1bfc5;
+   animation: moveright 0.2s forwards;
 }
-.fa-bars{
-    font-size: 25px;
+.fa-paw{
+    font-size: 30px;
     color: rgb(108, 30, 108);
 }
 /* end */
+
 .wrapper .education-card .text-card{
     width: 800px
 }
 .wrapper .cards .contact-card{
     margin-bottom: 200px;
+}
+#bigBackground{
+    background-color: #f0cf9b;
+}
+@keyframes moveright{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(10px);
+    }
 }
 @keyframes drop {
    0% {
@@ -366,7 +424,6 @@ textarea{
        transform: scaleY(1);
    }
 }
-
 @keyframes showphoto{
     0%{
         opacity:0;
@@ -383,15 +440,85 @@ textarea{
         transform: translateX(0);
     }
 }
+@media only screen and (max-width: 1400px){
+    .projects-wrapper:nth-child(odd) a{
+        transform:translateX(-10%);
+    }
+    .projects-wrapper:nth-child(odd) .cards{
+        transform: translateX(10%);
+    }
+    .projects-wrapper:nth-child(even) a{
+        transform:translateX(10%);
+    }
+    .projects-wrapper:nth-child(even) .cards{
+        transform: translateX(-10%);
+    }
+}
+@media only screen and (max-width: 1280px){
+    .projects-wrapper:nth-child(odd) a{
+        transform:translateX(-5%);
+    }
+    .projects-wrapper:nth-child(odd) .cards{
+        transform: translateX(5%);
+    }
+    .projects-wrapper:nth-child(even) a{
+        transform:translateX(5%);
+    }
+    .projects-wrapper:nth-child(even) .cards{
+        transform: translateX(-5%);
+    }
+}
+@media only screen and (max-width: 1148px){
+    .projects-wrapper:nth-child(odd) a{
+        transform:translateX(-2%);
+    }
+    .projects-wrapper:nth-child(odd) .cards{
+        transform: translateX(2%);
+    }
+    .projects-wrapper:nth-child(even) a{
+        transform:translateX(2%);
+    }
+    .projects-wrapper:nth-child(even) .cards{
+        transform: translateX(-2%);
+    }
+}
+@media only screen and (max-width: 1108px){
+    .projects-wrapper:nth-child(odd) a{
+        transform:translateX(0);
+    }
+    .projects-wrapper:nth-child(odd) .cards{
+        transform: translateX(0);
+    }
+    .projects-wrapper:nth-child(even) a{
+        transform:translateX(0);
+    }
+    .projects-wrapper:nth-child(even) .cards{
+        transform: translateX(0);
+    }
+}
+@media only screen and (max-width: 1092px){
+    .project-block img{
+        width: 520px;
+    }
+}
 @media only screen and (max-width: 1067px){
     .project-block{
         grid-template-columns: 1fr;
+    }
+    .project-block img{
+        width: 550px;
     }
     .project-block:nth-child(odd) a{
        order:-1 ;
     }
     .project-block:nth-child(odd) cards{
         order:1;
+    }
+    .projects-wrapper:nth-child(odd){
+        background: linear-gradient(90deg, rgba(192,182,237,1) 33%, rgba(232,168,159,1) 66%);
+    }
+    .projects-wrapper:nth-child(even){
+        background: linear-gradient(-90deg, rgba(192,182,237,1) 33%, rgba(232,168,159,1) 66%);
     }
 }
 @media only screen and (max-width: 1046px){
@@ -477,13 +604,11 @@ textarea{
     }
     .myintro{
         font-size: 20px;
+        line-height: 40px;
     }
     .wrapper .education-card .text-card{
         width: 700px;
         font-size: 25px;
-    }
-    .wrapper.employment-wrapper{
-        margin-top: 200px;
     }
 }
 @media only screen and (max-width: 680px){
@@ -493,6 +618,9 @@ textarea{
     .self-intro{
         width: 600px;
     }
+    .myphoto{
+        margin-left: 20%;
+    }
 }
 @media only screen and (max-width: 636px){
     #menu-icon{
@@ -500,10 +628,6 @@ textarea{
     }
     #small-menu{
         background-color:rgb(225, 210, 210);
-    }
-    .myphoto{
-        width: 300px;
-        height: 300px;
     }
     .wrapper .education-card .text-card{
         width: 600px;
@@ -545,8 +669,7 @@ textarea{
 }
 @media only screen and (max-width: 568px){
     .myphoto{
-        width: 200px;
-        height: 200px;
+        margin-left: 16%;
     }
     .self-intro{
         line-height: 22px;
@@ -587,7 +710,7 @@ textarea{
     .submit-btn{
         margin-left: 75%;
     }
-    .wrapper .cards .employment-card p{
+    .wrapper .cards .employment-card p, .wrapper .cards .text-card h2{
         transform: translateX(-10px);
     }
     .wrapper h1{

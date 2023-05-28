@@ -1,18 +1,18 @@
-window.addEventListener('scroll', reveal);
-function reveal(){
-    var reveals = document.querySelectorAll('.reveal');
+window.addEventListener('scroll', show);
+function show(){
+    var shows = document.querySelectorAll('.show');
 
-    for(var i = 0; i < reveals.length; i++){
+    for(var i = 0; i < shows.length; i++){
 
         var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 400;
+        var showtop = shows[i].getBoundingClientRect().top;
+        var showpoint = 400;
 
-        if(revealtop < windowheight - revealpoint){
-            reveals[i].classList.add('active');
+        if(showtop < windowheight - showpoint){
+            shows[i].classList.add('active');
         }
         else{
-            reveals[i].classList.remove('active');
+            shows[i].classList.remove('active');
         }
 
     }
