@@ -2,15 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@500&family=Lato:wght@700&family=Merriweather:ital,wght@1,700&family=Prompt:wght@700&family=Raleway:wght@900&family=Wix+Madefor+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@500&family=Lato:wght@700&family=Lora&family=Merriweather:ital,wght@1,700&family=Prompt:wght@700&family=Raleway:wght@900&family=Wix+Madefor+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@500&family=Lato:wght@700&family=Libre+Baskerville:ital@1&family=Lora&family=Merriweather:ital,wght@1,700&family=Prompt:wght@700&family=Raleway:wght@900&family=Wix+Madefor+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 body{
-    background-color: #eddabb;
+    background-color: #080931;
+    color: white;
 }
 main{
     overflow-x: hidden;
@@ -23,7 +25,7 @@ ul, li{
     list-style-type: none;
 }
 header{
-    background-color: #eddabb;
+    background-color: #080931;
     position: relative;
     padding-left: 50px;
     width: 100%;
@@ -45,16 +47,20 @@ main{
     justify-content: center;
     align-items:center;
     padding-top: 50px;
-    background-color: rgb(224, 204, 204);
+    background-color:#080931;
+    /*background-color: rgb(224, 204, 204);*/
 }
 .skills-wrapper{
-    background-color: white;
+    /*background-color: white;*/
+    background-color:#080931;
 }
 .education-wrapper{
-    background-color: rgb(208, 238, 238);
+    /*background-color: rgb(208, 238, 238);*/
+    background-color:#080931;
 }
 .contact-wrapper{
-    background-color: rgb(190, 236, 212);
+    /*background-color: rgb(190, 236, 212);*/
+    background-color:#080931;
     padding-top: 250px;
     padding-bottom: 50px;
     display: flex;
@@ -84,7 +90,6 @@ main{
 }
 .myworks{
     transform: translate(40px, -30px);
-    background-color: #f4c065;
     width: 990px;
     padding-left: 40px;
     padding-top: 20px;
@@ -104,8 +109,8 @@ main{
     opacity: 1;
 }
 header img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: 10px auto;
 }
 header div{
@@ -123,7 +128,7 @@ header div{
 }
 a{
     text-decoration: none;
-    color: rgb(108, 30, 108);
+    color: white;
 }
 a:visited, .slide a:visited{
     text-decoration: none;
@@ -166,7 +171,7 @@ a:visited, .slide a:visited{
     display: none;
 }
 .aff{
-    color: rgb(50, 50, 179);
+    color: rgb(67, 67, 201);
     font-size: 25px;
     font-family: 'Prompt', sans-serif;
     text-decoration: underline;
@@ -193,12 +198,13 @@ a:visited, .slide a:visited{
     display: flex;
     justify-content: center;
     align-items:center;
+    color:black
 }
 .projects-wrapper:nth-child(odd){
-    background: linear-gradient(90deg, rgb(252, 225, 208) 50%,rgb(251, 201, 194) 50%);  
+    background: linear-gradient(90deg, rgb(76, 62, 32) 50%,white 50%);  
 }
 .projects-wrapper:nth-child(even){
-    background: linear-gradient(-90deg, rgb(252, 225, 208) 50%,rgb(251, 201, 194) 50%);
+    background: linear-gradient(-90deg, rgb(76, 62, 32) 50%,white 50%);
 }
 .projects-wrapper:nth-child(odd) a{
     transform:translateX(-20%);
@@ -289,7 +295,7 @@ a:visited, .slide a:visited{
 }
 .email{
     width: 420px;
-    background-color:rgb(190, 236, 212);
+    background-color:#080931;
 }
 .submit-btn{
     width: 100px;
@@ -321,7 +327,7 @@ textarea{
     line-height: 20px;
     position: fixed;
     z-index:2;
-    transform: translate(-70px, -100px);
+    transform: translate(-90px, -150px);
  }
  #main-menu:hover{
     animation: turn 0.5s forwards;
@@ -348,7 +354,7 @@ textarea{
     margin-top: 7px;
 }
 #main-menu li:hover ul {
-    left: 0;
+    left: 10px;
     animation: drop 400ms ;
     transform-origin: top center;
 }
@@ -358,7 +364,10 @@ textarea{
 }
 .fa-paw{
     font-size: 30px;
-    color: rgb(108, 30, 108);
+    background-color:#080931;
+    border: 2px solid #080931;
+    border-radius: 10px;
+    color: white;
 }
 /* end */
 
@@ -380,11 +389,11 @@ textarea{
 }
 
 /* slideshow */
-.cards-img{
+.cards-img {
     width: 400px;
     height: auto;
-    animation: updown 2s infinite;
-}
+    box-shadow: 10px 10px rgb(31, 94, 125);
+  }
 .slideshow {
     position: relative;
     overflow: hidden;
@@ -406,9 +415,6 @@ textarea{
 }
 .subslide{
     display: flex;
-}
-.slide-title{
-    font-size: 25px;
 }
 .slide.active {
     opacity: 1;
@@ -433,8 +439,13 @@ textarea{
 }
 .prev-btn, .next-btn {
    border:none;
-   background-color: rgb(224, 204, 204);
+   background-color:#080931;
+   color: white;
    font-size: 30px;
+}
+.fa-circle-left:hover, .fa-circle-right:hover{
+    animation: shake 0.5s forwards;
+    color: yellow;
 }
 .pagination {
     text-align: center;
@@ -444,7 +455,8 @@ textarea{
     margin: 5px;
     padding: 5px 10px;
     border:none;
-    background-color:rgb(224, 204, 204);
+    background-color:#080931;
+    color: white;
 }
 .pagination button.active {
     color: yellow;
@@ -455,7 +467,7 @@ textarea{
     z-index: 4;
     font-size: 23px;
     margin-top: 30px;
-    color: black;
+    color: white;
 }
 .slide-description{
     width: 300px;
@@ -495,18 +507,6 @@ textarea{
     75% { transform: translateX(-4px) rotate(2deg); }
     100% { transform: translateX(0); }
   }
-@keyframes updown{
-    0%{
-        box-shadow: 5px 5px 5px grey;
-    }
-    50%{
-        box-shadow: 10px 10px 10px black;
-    }
-    100%{
-        box-shadow: 5px 5px 5px grey;
-    }
-
-}
 @keyframes arrowloop{
     0%{
         transform: translateX(10px);
@@ -630,10 +630,11 @@ textarea{
         order:1;
     }
     .projects-wrapper:nth-child(odd){
-        background: rgb(252, 225, 208);
+        background: rgb(76, 62, 32);
+        color: white;
     }
     .projects-wrapper:nth-child(even){
-        background:rgb(251, 201, 194) ;
+        background:white ;
     }
 }
 @media only screen and (max-width: 1046px){
