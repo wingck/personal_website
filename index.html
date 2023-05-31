@@ -7,11 +7,11 @@
 <body id="bodyBackground">
     <header>
         <div>
-            <img src="images/mylogo2.svg" alt="">
+            <img src="images/mylogo.svg" alt="">
             <div class="header-icons">
-                <a href="https://www.linkedin.com/in/ka-wing-chan-3a0a4319a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/wingck" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://codepen.io/ckwwingo" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+                <a href="https://www.linkedin.com/in/ka-wing-chan-3a0a4319a/" target="_blank"><span class="icon-effect"><i class="fa-brands fa-linkedin"></i></span></a>
+                <a href="https://github.com/wingck" target="_blank"><span class="icon-effect"><i class="fa-brands fa-github"></i></span></a>
+                <a href="https://codepen.io/ckwwingo" target="_blank"><span class="icon-effect"><i class="fa-brands fa-codepen"></i></span></a>
             </div>
         </div>
         <div id="main-menu">
@@ -34,8 +34,8 @@
           <div class="introduction" id="about">
             <img src="images/myphoto.png" alt="" class="myphoto">
             <div class="self-intro">
-                <p class="hi">Hi! </p>
-                <p class="myintro">I am Wingo. Before I came to Humber College, I was a Junior Web Developer in Hong Kong. 
+                <p class="hi">Hi! I am Wingo. </p>
+                <p class="myintro">Before I came to Humber College, I was a Junior Web Developer in Hong Kong. 
                 My works included designing and updating websites under Hong Kong Trade Development Council (HKTDC) such as <a href="https://portal.hktdc.com/aff/2022/en/" class="aff" target="_blank">Asian Financial Forum</a>, 
                 <a href="https://www.asiasummitglobalhealth.com/conference/asgh/en" class="asgh" target="_blank">Asia Summit on Global Health</a> and <a href="https://entertainmentpulse.hktdc.com/" class="ep" target="_blank">EntertainmentPulse</a>.</p>
             </div>
@@ -49,40 +49,34 @@
                         <p>Position: Junior Web Developer</p>
                         <p class="myworks-topic">My Works:</p>
                     </div>
-                    <div class="myworks">
-                        <a href="https://portal.hktdc.com/aff/2022/en/" target="_blank" class="hover-effect">
-                            <img src="images/aff.png" alt="" class="cards-img">
-                            <span class="hover-text">
-                                <ul>
-                                    <li>Homepage design</li>
-                                    <li>Update different pages</li>
-                                    <li>Banners design</li>
-                                </ul>
-                            </span>
-                            <p>Asian Financial Forum</p>
-                        </a>
-                        <a href="https://www.asiasummitglobalhealth.com/conference/asgh/en" target="_blank" class="hover-effect">
-                            <img src="images/asgh.png" alt="" class="cards-img">
-                            <span class="hover-text">
-                                <ul>
-                                    <li>Update different pages</li>
-                                    <li>Migration from Opentext to Wordpress</li>
-                                    <li>Logo design</li>
-                                </ul>
-                            </span>
-                            <p>Asia Summit on Global Health</p>
-                        </a>
-                        <a href="https://entertainmentpulse.hktdc.com/" target="_blank" class="hover-effect">
-                            <img src="images/ep.png" alt="" class="cards-img">
-                            <span class="hover-text">
-                                <ul>
-                                    <li>Update different pages</li>
-                                    <li>Banners design</li>
-                                </ul>
-                            </span>
-                            <p>EntertainmentPulse</p>
-                        </a>
-                    </div>
+                    <div class="slideshow">
+                        <div class="slide">
+                            <div class="subslide">
+                                <img src="images/aff.png" alt="" class="cards-img">
+                                <p class="slide-description">Homepage design<br>Update website contents<br>Banners design</p>
+                            </div>
+                            <a href="https://portal.hktdc.com/aff/2022/en/" target="_blank" class="slide-title">Asian Financial Forum<i class="fa-solid fa-right-long"></i></a>
+                        </div>
+                        <div class="slide">
+                            <div class="subslide">
+                                <img src="images/asgh.png" alt="" class="cards-img">
+                                <p class="slide-description">Update website contents<br>CMS Migration<br>Banner design</p>
+                            </div>
+                            <a href="https://www.asiasummitglobalhealth.com/conference/asgh/en" target="_blank" class="slide-title">Asia Summit on Global Health<i class="fa-solid fa-right-long"></i></a>
+                        </div>
+                        <div class="slide">
+                            <div class="subslide">
+                                <img src="images/ep.png" alt="" class="cards-img">
+                                <p class="slide-description">Update website contents<br>Banner design</p>
+                            </div>
+                            <a href="https://entertainmentpulse.hktdc.com/" target="_blank" class="slide-title">EntertainmentPulse<i class="fa-solid fa-right-long"></i></a>
+                        </div>
+                      </div>                     
+                      <div class="pagination"></div>
+                      <div class="button-container">
+                        <button class="prev-btn"><i class="fa-solid fa-circle-left"></i></button>
+                        <button class="next-btn"><i class="fa-solid fa-circle-right"></i></button>
+                      </div>
                 </div>
             </div>
          </div>
@@ -191,59 +185,74 @@
                 <div class="cards">
                      <div class="text-card skill-card">
                         <div>
-                            <img src="images/html.svg" alt="" class="html">
+                            <div class="flip-image">
+                                <img src="images/html.svg" alt="" class="html">
+                            </div>
                             <p class="skill-title">HTML</p>
                         </div>
                         <div>
-                            <img src="images/css.svg" alt="" class="css">
+                            <div class="flip-image">
+                                <img src="images/css.svg" alt="" class="css"></div>
                             <p class="skill-title">CSS</p>
                         </div>
                         <div>
-                            <img src="images/javascript.svg" alt="" class="javascript">
+                            <div class="flip-image">
+                                <img src="images/javascript.svg" alt="" class="javascript"></div>
                             <p class="skill-title">JavaScript</p>
                         </div>
                         <div>
-                            <img src="images/bootstrap.svg" alt="" class="bootstrap">
+                            <div class="flip-image">
+                                <img src="images/bootstrap.svg" alt="" class="bootstrap"></div>
                             <p class="skill-title">Bootstrap</p>
                         </div>
                         <div>
-                            <img src="images/jquery.svg" alt="" class="jquery">
+                            <div class="flip-image">
+                                <img src="images/jquery.svg" alt="" class="jquery"></div>
                             <p class="skill-title">jQuery</p>
                         </div>
                         <div>
-                            <img src="images/sql.svg" alt="" class="sql">
+                            <div class="flip-image">
+                                <img src="images/sql.svg" alt="" class="sql"></div>
                             <p class="skill-title">SQL</p>
                         </div>
                         <div>
-                            <img src="images/mysql.svg" alt="" class="mysql">
+                            <div class="flip-image">
+                                <img src="images/mysql.svg" alt="" class="mysql"></div>
                             <p class="skill-title">MySQL</p>
                         </div>
                         <div>
-                            <img src="images/csharp.svg" alt="" class="csharp">
+                            <div class="flip-image">
+                                <img src="images/csharp.svg" alt="" class="csharp"></div>
                             <p class="skill-title">C#</p>
                         </div>
                         <div>
-                            <img src="images/aspnet.svg" alt="" class="aspnet">
+                            <div class="flip-image">
+                                <img src="images/aspnet.svg" alt="" class="aspnet"></div>
                             <p class="skill-title">ASP.NET</p>
                         </div>
                         <div>
-                            <img src="images/php.svg" alt="" class="php">
+                            <div class="flip-image">
+                                <img src="images/php.svg" alt="" class="php"></div>
                             <p class="skill-title">PHP</p>
                         </div>
                         <div>
-                            <img src="images/laravel.svg" alt="" class="laravel">
+                            <div class="flip-image">
+                                <img src="images/laravel.svg" alt="" class="laravel"></div>
                             <p class="skill-title">Laravel</p>
                         </div>
                         <div>
-                            <img src="images/mongodb.svg" alt="" class="mongodb">
+                            <div class="flip-image">
+                                <img src="images/mongodb.svg" alt="" class="mongodb"></div>
                             <p class="skill-title">MongoDB</p>
                         </div>
                         <div>
-                            <img src="images/nodejs.svg" alt="" class="nodejs">
+                            <div class="flip-image">
+                                <img src="images/nodejs.svg" alt="" class="nodejs"></div>
                             <p class="skill-title">Node.js</p>
                         </div>
                         <div>
-                            <img src="images/reactjs.svg" alt="" class="reactjs">
+                            <div class="flip-image">
+                                <img src="images/reactjs.svg" alt="" class="reactjs"></div>
                             <p class="skill-title">React.js</p>
                         </div>
                     </div>
@@ -284,6 +293,9 @@
             </div>
         </div>
     </main>
+    <footer>
+        &copy; 2023 Chan Ka Wing, Wingo. All rights reserved.
+    </footer>
 <script src="script/script.js"></script>
 <script src="https://kit.fontawesome.com/c54b7d85ab.js" crossorigin="anonymous"></script>
 </body>
